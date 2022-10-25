@@ -1,0 +1,941 @@
+@import url(./Fonts/font.css);
+
+body {
+  letter-spacing: 1px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  min-height: 6rem;
+  border-top: 1.5rem solid #193071;
+  background: white !important;
+}
+
+nav img {
+  height: 5rem;
+}
+
+nav .nav-link {
+  margin: 0 0.5em;
+  color: black;
+  font-family: "financer", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+nav .con-btn {
+  display: block;
+  background: #7283e5;
+  padding: 0.5em 1em !important;
+  border-radius: 2em;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s all ease;
+}
+
+nav .con-btn:hover {
+  color: white !important;
+  background: #193071;
+}
+
+nav .nav-link:hover {
+  color: #193071;
+  font-weight: bold;
+}
+
+.sec1 {
+  position: relative;
+  padding: 0;
+  padding-top: 5rem;
+}
+
+.sec1 .sec1Swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 0;
+  aspect-ratio: 2;
+  position: relative;
+}
+
+.sec1 .sec1Swiper .swiper-slide .deskbg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec1 .sec1Swiper .swiper-slide .mobbg {
+  display: none;
+}
+
+.sec1 .sec1Swiper .swiper-slide img {
+  height: 4rem;
+}
+
+.sec1 .sec1Swiper .swiper-slide h1 {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  color: white;
+  margin: 1rem 0;
+}
+
+.sec1 .sec1Swiper .swiper-slide a {
+  padding: 0.5em 1em;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.sec1 .sec1Swiper .swiper-button-next,
+.sec1 .sec1Swiper .swiper-button-prev {
+  color: black;
+  height: 2rem;
+  width: 2rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.sec1 .sec1Swiper .swiper-button-next::after,
+.sec1 .sec1Swiper .swiper-button-prev::after {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.sec1 .sec1Swiper .swiper-pagination {
+  padding: 1rem 0;
+}
+
+.sec1 .sec1Swiper .swiper-pagination span {
+  background-color: white;
+  opacity: 1 !important;
+}
+
+.sec1
+  .sec1Swiper
+  .swiper-pagination
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {
+  outline: 4px solid rgba(255, 255, 255, 0.507);
+}
+
+.sec2 .col-md-3 h2 {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  color: #193071;
+}
+
+.sec2 button {
+  width: fit-content;
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  color: #193071;
+}
+
+.border-bottom {
+  height: 4px;
+  width: 50%;
+  background: linear-gradient(to right, #193071, #193071, white);
+}
+
+.sec2 .sec2Swiper .swiper-slide img {
+  width: 100%;
+}
+
+.sec2 .sec2Swiper .swiper-slide h4 {
+  font-size: 1.7rem;
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  margin-block: 0.75em;
+}
+
+.sec2 .sec2Swiper .swiper-slide p {
+  font-size: 1rem;
+  font-family: "financer", sans-serif;
+  font-weight: 300;
+  margin: 1em 0;
+  opacity: 0.8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 4.5em;
+}
+
+.sec2 .sec2Swiper .swiper-slide a {
+  color: black;
+  font-family: "financer", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.sec2 .sec2Swiper .swiper-slide a:hover {
+  text-decoration: underline;
+}
+
+.sec3 {
+  padding: 4rem 1rem;
+}
+
+.sec3 .col-md-3 h2 {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  color: #193071;
+}
+
+.sec3 .col-md-3 p {
+  font-family: "financer", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 1em 0;
+  opacity: 0.8;
+}
+
+.sec3 button {
+  border: 1px solid rgba(128, 128, 128, 0.475);
+  background: none;
+  padding: 0.25em 1em;
+  color: rgb(66, 66, 66);
+  margin-right: 0.5em;
+  transition: 0.5s all;
+  border-radius: 5px;
+}
+
+.sec3 button:hover {
+  background: #193071;
+  color: white;
+}
+
+.sec3 .sec3Swiper .swiper-wrapper {
+  padding: 1rem 0;
+}
+
+.sec3 .sec3Swiper .swiper-slide {
+  width: 240px;
+}
+
+.sec3 .sec3Swiper .swiper-slide .item {
+  height: 200px;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.648);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2rem;
+}
+
+.sec3 .sec3Swiper .swiper-slide .item p {
+  margin-top: 0.5em;
+  font-weight: 500;
+}
+
+.sec3 .sec3Swiper .swiper-slide .item img {
+  height: 4rem;
+}
+
+.sec3 .sec3Swiper .swiper-slide .button-link {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.sec3 .sec3Swiper .swiper-slide .item:hover + .button-link,
+.sec3 .sec3Swiper .swiper-slide .button-link:hover {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+.sec3 .sec3Swiper .swiper-slide .button-link a {
+  height: 2rem;
+  width: 2rem;
+  display: grid;
+  place-content: center;
+  font-size: 1.1rem;
+  text-decoration: none;
+  background-color: #193071;
+  color: white;
+  border-radius: 50%;
+}
+
+.sec4 {
+  padding: 4rem 0;
+  position: relative;
+}
+
+.sec4 .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.sec4 .border-bottom {
+  max-width: 150px;
+}
+
+.sec4 h2 {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  color: #193071;
+}
+
+.sec4 p {
+  font-family: "financer", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.sec4 .net {
+  display: grid;
+  grid-template-columns: 6em auto;
+  align-items: center;
+  border-left: 3px solid #018acd;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.sec4 .net p {
+  margin: 0 1rem;
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+}
+
+.sec4 .net h2 {
+  margin: 0;
+  color: #018acd;
+  line-height: 0.8em;
+}
+
+.sec4 a {
+  padding: 0.75em 1.5em;
+  background: #193071;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s all;
+}
+
+.sec4 a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.sec4 .mySwiper5 {
+  padding: 3rem 0;
+  background: #e9e9e9;
+  transform: translateY(10rem);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.326);
+}
+
+.sec4 .mySwiper5 .swiper-slide {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sec4 .mySwiper5 .swiper-slide img {
+  height: 5.5rem;
+  padding: 1rem;
+}
+
+.sec4 .mySwiper5 .swiper-slide p {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  margin: 0.5em 0 0;
+}
+
+.sec5 {
+  padding: 7rem 1rem 5rem;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.sec5 .bg {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.sec5 .row {
+  flex-wrap: wrap-reverse;
+}
+
+.sec5 .coma {
+  height: 4rem;
+}
+
+.sec5 p {
+  font-family: "financer", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 1.5rem 0;
+}
+
+.sec5 h5 {
+  font-family: "financer", sans-serif;
+  color: #018acd;
+  font-weight: 600;
+  margin: 0;
+}
+
+.sec5 h6 {
+  font-family: "financer", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.sec5 .col-md-4 {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+}
+
+.sec5 .col-md-4 img {
+  width: 100%;
+}
+
+.sec5 .badge {
+  background: url(img/polygon.png);
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: auto;
+  aspect-ratio: 1;
+  color: white;
+  font-family: "financer", sans-serif;
+  font-weight: 500;
+  display: grid;
+  place-content: center;
+  font-size: min(1.1vw, 1.1rem);
+}
+
+.sec5 .badge span {
+  font-weight: 600;
+  font-size: min(3vw, 2.3rem);
+  margin-top: 0.2em;
+}
+
+.sec6 {
+  padding: 5rem 1rem;
+  position: relative;
+  background: #e2eaf97a;
+}
+
+.sec6 .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.sec6 h6 {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  color: #018acd;
+}
+
+.sec6 h2 {
+  margin: 1em 0 0;
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  color: #193071;
+}
+
+.sec6 .border-bottom {
+  width: 200px;
+  margin-block: 0.5rem 5rem;
+}
+
+.sec6 .row {
+  justify-content: space-between;
+}
+
+.sec6 h3 {
+  color: #018acd;
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+}
+
+.sec6 p {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.sec7 {
+  padding: 8rem 1rem 10rem;
+  position: relative;
+}
+
+.sec7 h2 {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  color: #193071;
+}
+
+.sec7 .border-bottom {
+  width: 200px;
+  margin: 0.5rem 0 3rem;
+}
+
+.sec7 .sec7Swiper .swiper-slide {
+  max-width: 450px;
+  width: 80vw;
+}
+
+.sec7 .sec7Swiper .swiper-slide h4 {
+  font-size: 1.7rem;
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  margin-block: 0.75em;
+}
+
+.sec7 .sec7Swiper .swiper-slide p {
+  font-size: 1rem;
+  font-family: "financer", sans-serif;
+  font-weight: 300;
+  margin: 1em 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 4.5em;
+}
+
+.sec7 .sec7Swiper .swiper-slide a {
+  color: black;
+  font-family: "financer", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.sec7 .sec7Swiper .swiper-slide img {
+  width: 100%;
+}
+
+.sec7 .contact {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: #193071;
+  padding: 2rem;
+}
+
+.sec7 .contact .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec7 .contact .row .col-md-3 {
+  display: flex;
+  align-items: center;
+}
+
+.sec7 .contact .row .col-md-3 img {
+  height: 4rem;
+  width: 4rem;
+  object-fit: contain;
+  padding: 1rem;
+  clip-path: circle(2rem);
+  background: white;
+}
+
+.sec7 .contact .row .col-md-3 div {
+  font-family: "financer", sans-serif;
+  color: white;
+  margin-left: 1rem;
+}
+
+.sec7 .contact .row .col-md-3 div h5 {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.sec7 button {
+  border: 1px solid rgba(128, 128, 128, 0.475);
+  background: none;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  color: rgb(66, 66, 66);
+  margin-right: 0.5em;
+  transition: 0.5s all;
+  background: #193071;
+  color: white;
+}
+
+.sec7 .contact .row .col-md-3 div p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+footer {
+  padding-top: 8rem;
+  background: url(img/footerbg.png);
+  background-size: cover;
+}
+
+footer .logo {
+  height: 5rem;
+}
+
+footer p {
+  color: white;
+  margin: 2rem 0;
+  font-family: "financer", sans-serif;
+  font-size: 1rem;
+  max-width: 350px;
+}
+
+footer .icons {
+  display: flex;
+  align-items: center;
+}
+
+footer .icons a {
+  color: #193071;
+  background: white;
+  height: 2rem;
+  width: 2rem;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  margin: 0.5em;
+  opacity: 1;
+}
+
+footer h5 {
+  color: white;
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+footer .col-md-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+footer a {
+  font-family: "financer", sans-serif;
+  color: white;
+  margin: 0.7em 0;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  text-decoration: none;
+  transition: 0.5s all;
+}
+
+footer a:hover {
+  color: white;
+  opacity: 1;
+}
+
+footer .icons a:hover {
+  color: black;
+}
+
+footer .copyright {
+  border-top: 2px solid #018acd;
+}
+
+footer .copyright .container {
+  font-size: 1rem;
+  font-family: "financer", sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .copyright p {
+  margin: 1rem 0 1em;
+  max-width: unset;
+}
+
+footer .copyright a {
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+.sec8 {
+  padding: 3rem 1rem;
+}
+
+.sec8 .row {
+  justify-content: space-between;
+}
+
+.sec8 .card {
+  padding: 2rem;
+  background-size: cover;
+  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  min-height: 250px;
+}
+
+.sec8 .card.title {
+  color: black;
+  box-shadow: none;
+  border: none;
+}
+
+.sec8 .card p {
+  font-family: "financer", sans-serif;
+  font-size: 1rem;
+}
+
+.sec8 .cardh {
+  aspect-ratio: 1;
+  width: 48%;
+}
+
+.sec8 .card a {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  color: black;
+  margin-top: auto;
+  padding: 0.5em 1em;
+  background: white;
+  width: fit-content;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.sec8 .card h3 {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 769px) {
+  .navbar-toggler,
+  .navbar-toggler:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navbar .navbar-collapse .navbar-nav {
+    align-items: flex-start;
+  }
+
+  .navbar .navbar-collapse .navbar-nav .nav-link {
+    margin: 0.5em 0;
+  }
+
+  .sec1 .sec1Swiper .swiper-button-next,
+  .sec1 .sec1Swiper .swiper-button-prev {
+    top: 60%;
+  }
+
+  .sec1 .sec1Swiper .swiper-slide {
+    aspect-ratio: 0.8;
+  }
+
+  .sec1 .sec1Swiper .swiper-slide .deskbg {
+    display: none;
+  }
+
+  .sec1 .sec1Swiper .swiper-slide .mobbg {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .sec2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sec2 .border-bottom {
+    margin-bottom: 2rem;
+  }
+
+  .sec2 .swiper-slide {
+    padding: 2rem;
+  }
+
+  .sec3 p {
+    margin: 2em 0 !important;
+  }
+
+  .sec4 .col-md-5:nth-child(2) {
+    background: white;
+    padding-block: 2rem;
+  }
+
+  .sec4 .bg {
+    object-fit: cover;
+    width: 100%;
+    object-position: left;
+  }
+
+  .sec5 {
+    padding: 6rem 1rem 3rem;
+  }
+
+  .sec5 .badge {
+    font-size: min(3vw, 1.1rem);
+  }
+
+  .sec5 .badge span {
+    font-size: min(7vw, 2.3rem);
+  }
+
+  .sec7 {
+    padding: 3rem 1rem;
+  }
+
+  .sec7 .col-md-7 {
+    margin-bottom: 2rem;
+  }
+
+  .sec7 .contact {
+    position: relative;
+    transform: none;
+    left: 0;
+    margin-top: 2rem;
+  }
+
+  .sec7 .sec7Swiper .swiper-slide {
+    max-width: 250px;
+  }
+
+  .sec7 .contact .col-md-3 {
+    margin: 2rem 0;
+  }
+
+  footer {
+    padding: 3rem 1rem 0;
+  }
+
+  footer .col-md-6,
+  footer .col-md-3 {
+    margin-bottom: 2rem;
+  }
+
+  footer .copyright .container {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .sec8 .card {
+    height: 25vh !important;
+  }
+
+  .sec8 .card.col-md-6 {
+    width: 100%;
+    margin: 2rem 0;
+  }
+}
+
+/* ================**===============
+================**===============
+About Page CSS
+================**===============
+================**=============== */
+
+.about-hero {
+  padding-top: 8rem;
+}
+
+.about-hero div {
+  background: linear-gradient(#193071c4, #193071c4), url(./img/about-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-hero div h2 {
+  font-family: "financer", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.about-experience {
+  padding: 4rem 0;
+}
+
+.story {
+  max-width: 250px;
+  width: 100%;
+  background: #395caa;
+  padding: 4rem 2rem;
+  border-radius: 0.75rem;
+}
+
+.story span {
+  font-family: "financer", sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.story h3 {
+  font-family: "financer", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+}
+
+.about-experience .col-md-6 h2 {
+  font-family: "financer", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #193071;
+}
+
+.about-experience .col-md-6 p {
+  font-family: "financer", sans-serif;
+  color: #3e3e3e;
+  padding: 3rem 0 4rem;
+}
+
+.view-btn a {
+  font-family: "financer", sans-serif;
+  background: #193071;
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+}
