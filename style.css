@@ -939,3 +939,27 @@ About Page CSS
   padding: 0.75rem 1.5rem;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 769px) {
+  .about-hero div h2 {
+    font-size: 2.5rem;
+  }
+  .story {
+    max-width: 150px;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .story span {
+    font-size: 1rem;
+  }
+
+  .story h3 {
+    font-size: 1.25rem;
+  }
+
+  .about-experience .col-md-6 h2 {
+    font-size: 1.5rem;
+    padding-top: 50px;
+  }
+}
