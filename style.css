@@ -4,6 +4,14 @@ body {
   letter-spacing: 1px;
 }
 
+.section-title h2 {
+  font-family: "financer", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  color: #193071;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -929,6 +937,8 @@ About Page CSS
   color: #ffffff;
 }
 
+/* About Expeience Section CSS Start */
+
 .about-experience {
   padding: 4rem 0;
 }
@@ -976,9 +986,197 @@ About Page CSS
   color: #ffffff;
   font-size: 1rem;
   text-decoration: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Our Mission Section CSS Start */
+
+.our-mission {
+  background: #f5f5f5;
+}
+.our-mission-wrapper {
+  background: url(./img/our-mission-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 4rem 0;
+}
+
+.vision,
+.mission {
+  padding: 0 140px;
+}
+
+.mission {
+  padding-top: 80px;
+}
+
+.our-mission-content h2 {
+  position: absolute;
+  font-family: "financer", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #193071;
+  transform: rotate(-90deg);
+  top: 125px;
+  left: -156px;
+}
+
+.our-mission-content h2::after {
+  position: absolute;
+  content: "";
+  width: 45%;
+  height: 2px;
+  background: #193071;
+  top: 4.75rem;
+  left: 5.9rem;
+}
+
+.vision-content h4,
+.mission-content h4 {
+  font-family: "financer", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #193071;
+}
+
+.vision-content p,
+.mission-content p {
+  font-family: "financer", sans-serif;
+  font-size: 1.1rem;
+  color: #242424;
+}
+
+/* Team Section CSS Start */
+
+.about-team {
+  padding: 4rem 0;
+}
+
+.about-team-title {
+  max-width: 20rem;
+  width: 100%;
+  margin: auto;
+}
+
+.about-team-title .border-bottom {
+  width: 40%;
+  margin-left: 20px;
+}
+
+.team-card {
+  margin-top: 50px;
+  z-index: 1;
+}
+
+.team-shape {
+  position: absolute;
+  top: -38px;
+  left: -42px;
+  z-index: -1;
+}
+
+.team-card h3 {
+  font-family: "financer", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: #193071;
+  padding-top: 0.5rem;
+  margin-left: -100px;
+}
+
+.team-card p {
+  font-family: "financer", sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #242424;
+  margin-left: -100px;
+}
+
+/* Principle Section CSS Start */
+
+.principle {
+  background: #f8f8f8;
+  padding: 4rem 0 10rem;
+}
+
+.principle-title {
+  max-width: 800px;
+  margin: auto;
+}
+
+.principle-title .border-bottom {
+  width: 20%;
+  margin-left: 20px;
+}
+
+.principle-img {
+  position: absolute;
+  top: -11rem;
+  left: -3rem;
+}
+
+.principle-card {
+  background: #ffffff;
+  padding: 2rem;
+  margin-right: 3rem;
+  box-shadow: 1px -1px 15px 2px #e9e9e9;
   border-radius: 10px;
 }
+
+.principle-card h5 {
+  font-family: "financer", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #193071;
+}
+
+.principle-card p {
+  font-family: "financer", sans-serif;
+  font-size: 1rem;
+  color: #747474;
+}
+
+.principle-info-card {
+  background: #ffffff;
+  margin-top: 10rem;
+  margin-left: 4rem;
+  padding: 2rem;
+  box-shadow: 1px -1px 15px 2px #e9e9e9;
+}
+
+.principle-profile {
+  position: absolute;
+  max-width: 12rem;
+  width: 100%;
+  right: 0;
+}
+
+.principle-profile h4 {
+  font-family: "financer", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #193071;
+}
+
+.principle-profile span {
+  font-family: "financer", sans-serif;
+  font-size: 1.1rem;
+  color: #747474;
+}
+
+.principle-info-card-text {
+  margin-top: 7rem !important;
+}
+
+.principle-info-card-text p {
+  font-family: "financer", sans-serif;
+  font-size: 1rem;
+  color: #747474;
+}
+
+/* Principle Section CSS End */
 
 @media screen and (max-width: 769px) {
   .about-hero div h2 {
@@ -1000,6 +1198,82 @@ About Page CSS
 
   .about-experience .col-md-6 h2 {
     font-size: 1.5rem;
-    padding-top: 50px;
+    padding-top: 3.125rem;
+  }
+
+  .vision,
+  .mission {
+    padding: 0;
+  }
+
+  .mission {
+    padding-top: 3.125rem;
+  }
+
+  .our-mission-wrapper {
+    background: none;
+  }
+
+  .our-mission-content h2 {
+    display: none;
+  }
+
+  .vision-content h4,
+  .mission-content h4 {
+    font-size: 1.5rem;
+  }
+
+  .vision-content p,
+  .mission-content p {
+    font-size: 1rem;
+  }
+
+  .section-title h2 {
+    font-size: 3rem;
+  }
+
+  .about-team-title .border-bottom {
+    width: 40%;
+    margin-left: 3.125rem;
+  }
+
+  .team-card {
+    text-align: center;
+  }
+
+  .team-shape {
+    left: 1rem;
+  }
+
+  .team-card h3 {
+    font-size: 1.5rem;
+    margin-left: -0px;
+  }
+
+  .team-card p {
+    font-size: 1rem;
+    margin-left: -0px;
+  }
+
+  .principle {
+    padding: 4rem 0;
+  }
+
+  .principle-card {
+    margin-right: 0;
+    padding: 1rem;
+  }
+
+  .principle-info-card {
+    margin-top: 15rem;
+    margin-left: 0;
+  }
+
+  .principle-profile {
+    top: 8.5rem;
+  }
+
+  .principle-info-card-text {
+    margin-top: 12rem !important;
   }
 }
