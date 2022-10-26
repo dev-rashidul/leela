@@ -780,7 +780,7 @@ footer .copyright a {
   font-weight: 600;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 767px) {
   .navbar-toggler,
   .navbar-toggler:focus {
     border: none;
@@ -1178,7 +1178,7 @@ About Page CSS
 
 /* Principle Section CSS End */
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 767px) {
   .about-hero div h2 {
     font-size: 2.5rem;
   }
@@ -1259,6 +1259,10 @@ About Page CSS
     padding: 4rem 0;
   }
 
+  .principle-title .border-bottom {
+    width: 50%;
+  }
+
   .principle-card {
     margin-right: 0;
     padding: 1rem;
@@ -1269,8 +1273,20 @@ About Page CSS
     margin-left: 0;
   }
 
+  .principle-img {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
   .principle-profile {
     top: 8.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+  }
+
+  .principle-profile .border-bottom {
+    margin: auto;
   }
 
   .principle-info-card-text {
