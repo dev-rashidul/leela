@@ -597,12 +597,12 @@ nav .con-btn:hover {
   align-items: center;
 }
 
-.sec7 .contact .row .col-md-3 {
+.sec7 .contact .row .col-md-6 {
   display: flex;
   align-items: center;
 }
 
-.sec7 .contact .row .col-md-3 img {
+.sec7 .contact .row .col-md-6 img {
   height: 4rem;
   width: 4rem;
   object-fit: contain;
@@ -611,13 +611,13 @@ nav .con-btn:hover {
   background: white;
 }
 
-.sec7 .contact .row .col-md-3 div {
+.sec7 .contact .row .col-md-6 div {
   font-family: "financer", sans-serif;
   color: white;
   margin-left: 1rem;
 }
 
-.sec7 .contact .row .col-md-3 div h5 {
+.sec7 .contact .row .col-md-6 div h5 {
   font-weight: 600;
   font-size: 1.1rem;
 }
