@@ -32,6 +32,7 @@ nav .nav-link {
   font-family: "financer", sans-serif;
   font-weight: 300;
   font-size: 1.1rem;
+  transition: all 0.5s ease;
 }
 
 nav .con-btn {
@@ -39,19 +40,18 @@ nav .con-btn {
   background: #7283e5;
   padding: 0.5em 1em !important;
   border-radius: 2em;
-  color: white;
+  color: white !important;
   font-weight: bold;
   transition: 0.5s all ease;
+}
+
+nav .nav-link:hover {
+  color: #193071 !important;
 }
 
 nav .con-btn:hover {
   color: white !important;
   background: #193071;
-}
-
-nav .nav-link:hover {
-  color: #193071;
-  font-weight: bold;
 }
 
 .navbar-toggler span {
@@ -988,6 +988,11 @@ About Page CSS
   text-decoration: none;
   padding: 0.85rem 1.5rem;
   border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.view-btn a:hover {
+  background: #7283e5;
 }
 
 /* Our Mission Section CSS Start */
@@ -1069,13 +1074,6 @@ About Page CSS
   z-index: 1;
 }
 
-.team-shape {
-  position: absolute;
-  top: -38px;
-  left: -42px;
-  z-index: -1;
-}
-
 .team-card h3 {
   font-family: "financer", sans-serif;
   font-size: 1.6rem;
@@ -1083,7 +1081,6 @@ About Page CSS
   text-align: center;
   color: #193071;
   padding-top: 0.5rem;
-  margin-left: -100px;
 }
 
 .team-card p {
@@ -1091,7 +1088,6 @@ About Page CSS
   font-size: 1.1rem;
   text-align: center;
   color: #242424;
-  margin-left: -100px;
 }
 
 /* Principle Section CSS Start */
@@ -1178,6 +1174,16 @@ About Page CSS
 
 /* Principle Section CSS End */
 
+@media (min-width: 992px) and (max-width: 1400px) {
+  .vision,
+  .mission {
+    padding-right: 250px;
+  }
+  .our-mission-content h2 {
+    top: 160px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .about-hero div h2 {
     font-size: 2.5rem;
@@ -1239,20 +1245,6 @@ About Page CSS
 
   .team-card {
     text-align: center;
-  }
-
-  .team-shape {
-    left: 1rem;
-  }
-
-  .team-card h3 {
-    font-size: 1.5rem;
-    margin-left: -0px;
-  }
-
-  .team-card p {
-    font-size: 1rem;
-    margin-left: -0px;
   }
 
   .principle {
