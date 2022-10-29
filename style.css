@@ -1338,3 +1338,314 @@ About Page CSS
     margin-top: 12rem !important;
   }
 }
+
+/* ==============**==============
+==============**==============
+Blog Page CSS
+==============**==============
+==============**============== */
+
+/* Blog Hero Section CSS Start */
+
+.blog-hero-wrapper {
+  background: url(./img/blog-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 34rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-hero-wrapper h2 {
+  font-family: "financer", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 17%;
+}
+
+/* Blog Hero Section CSS End */
+
+/* Blog Main */
+
+.blog-main-wrapper {
+  padding: 80px 0;
+}
+
+/* Blog News Section CSS Start */
+
+.news-card {
+  text-align: center;
+}
+
+.news-card h6 {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  color: #111111;
+  padding: 1.25rem 0;
+}
+
+.news-card h3 {
+  font-family: "financer", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111111;
+}
+
+.news-card p {
+  font-family: "financer", sans-serif;
+  color: #4f4f4f;
+  padding-bottom: 20px;
+}
+
+.news-card a {
+  font-family: "financer", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #505050;
+  padding: 15px 18px;
+  border: 1px solid #505050;
+  border-radius: 5px;
+}
+
+.load-more-btn a {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #505050;
+  padding: 15px 35px;
+  border: 1px solid #505050;
+  border-radius: 5px;
+}
+
+/* Blog News Section CSS End */
+
+/* Blog Sidebar Section CSS Start */
+
+.search-field {
+  background: #f8f7f3;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px 35px;
+  border-radius: 10px;
+}
+
+.search-field input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.search-field input::placeholder {
+  font-family: "financer", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+
+.sidebar-news {
+  background: #f8f7f3;
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+  padding: 3rem 1.5rem;
+  margin-top: 3.75rem;
+  border-radius: 10px;
+}
+
+.sidebar-news h4 {
+  font-family: "financer", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #505050;
+  padding-top: 1rem;
+}
+
+.sidebar-news p {
+  font-family: "financer", sans-serif;
+  color: #505050;
+  padding-bottom: 30px;
+}
+
+.news-category {
+  position: relative;
+  text-align: center;
+  background: #f8f7f3;
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 3.75rem;
+  border-radius: 10px;
+}
+
+.news-category h3,
+.recent-posts h3,
+.business h3 {
+  font-family: "financer", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #193071;
+  padding-top: 2rem;
+}
+
+.news-category .border-bottom {
+  position: absolute;
+  width: 25%;
+  left: 30%;
+}
+
+.news-category ul {
+  padding: 50px 0 20px 0;
+}
+
+.news-category ul li {
+  list-style: none;
+  padding: 20px 0;
+  border-top: 1px solid #e6e6e6;
+}
+
+.news-category ul li a {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #505050;
+}
+
+.recent-posts {
+  position: relative;
+  background: #f8f7f3;
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 3.75rem;
+  border-radius: 10px;
+}
+
+.recent-post {
+  padding: 0 20px 40px;
+}
+
+.recent-post-img {
+  max-width: 35%;
+  width: 100%;
+}
+
+.recent-post-img img {
+  width: 100%;
+}
+
+.recent-posts .border-bottom {
+  position: absolute;
+  width: 25%;
+  left: 33%;
+}
+
+.recent-post-content h6 {
+  font-family: "financer", sans-serif;
+  font-weight: 800;
+  color: #212121;
+}
+
+.recent-post-content p {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  color: #212121;
+}
+
+.business {
+  background: #f8f7f3;
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 3.75rem;
+  border-radius: 10px;
+  padding-bottom: 70px;
+}
+
+.business .border-bottom {
+  position: absolute;
+  width: 25%;
+  left: 33%;
+}
+
+.business-card {
+  text-align: center;
+  background: #edfaf9;
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  margin: 0 50px;
+  padding: 1.25rem 0;
+  margin-top: 70px;
+}
+
+.business-card p {
+  font-family: "financer", sans-serif;
+  font-weight: 800;
+  color: #193071;
+  padding: 20px 0;
+}
+
+.business-link i {
+  position: absolute;
+  color: #fff;
+  background: #193071;
+  width: 50px;
+  height: 50px;
+  padding: 17px;
+  border-radius: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -20px;
+}
+
+/* Blog Sidebar Section CSS End */
+
+/* Respoinsive */
+@media (min-width: 768px) and (max-width: 991px) {
+  .news-category .border-bottom {
+    left: 36%;
+  }
+
+  .recent-posts .border-bottom {
+    left: 38%;
+  }
+
+  .recent-post {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  .news-category .border-bottom {
+    left: 22%;
+  }
+
+  .recent-posts .border-bottom {
+    left: 26%;
+  }
+
+  .business .border-bottom {
+    left: 26%;
+  }
+
+  .recent-post {
+    font-size: 2.5rem;
+  }
+
+  .blog-hero-wrapper h2 {
+    font-size: 2.5rem;
+    padding-top: 100%;
+  }
+
+  .news-card h3 {
+    font-size: 1rem;
+  }
+
+  .business-card {
+    margin: 0 20px;
+    margin-top: 60px;
+  }
+
+  .recent-post-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Blog Main */
