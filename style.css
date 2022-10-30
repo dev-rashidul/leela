@@ -1379,7 +1379,7 @@ Blog Page CSS
 /* Blog Main */
 
 .blog-main-wrapper {
-  padding: 80px 0;
+  padding-top: 80px;
 }
 
 /* Blog News Section CSS Start */
@@ -1607,6 +1607,7 @@ Blog Page CSS
   margin: 0 50px;
   padding: 1.25rem 0;
   margin-top: 70px;
+  transition: 0.5s;
 }
 
 .business-card p {
@@ -1616,17 +1617,30 @@ Blog Page CSS
   padding: 20px 0;
 }
 
-.business-link i {
+.business-link {
   position: absolute;
-  color: #fff;
-  background: #193071;
-  width: 50px;
-  height: 50px;
-  padding: 17px;
-  border-radius: 100%;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%);
-  bottom: -20px;
+  transform: translate(-50%, 0%);
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.business-link a {
+  height: 2.25rem;
+  width: 2.25rem;
+  display: grid;
+  place-content: center;
+  font-size: 1.1rem;
+  text-decoration: none;
+  background-color: #193071;
+  color: white;
+  border-radius: 50%;
+}
+
+.business-card:hover .business-link {
+  transform: translate(-50%, 50%);
+  opacity: 1;
 }
 
 /* Blog Sidebar Section CSS End */
@@ -1652,10 +1666,6 @@ Blog Page CSS
 
   .business .border-bottom {
     left: 26%;
-  }
-
-  .recent-post {
-    font-size: 2.5rem;
   }
 
   .blog-hero-wrapper h2 {
@@ -1709,7 +1719,8 @@ Contact Page CSS
 /* Contact Map Section CSS Start */
 
 #Contact-map {
-  padding-top: 60px;
+  padding-top: 80px;
+  padding-bottom: 150px;
 }
 
 .map-text {
@@ -1752,8 +1763,7 @@ Contact Page CSS
 
 #Contact-info {
   background: #eff1fe;
-  padding-top: 80px;
-  padding-bottom: 150px;
+  padding: 80px 0px;
 }
 
 .contact-form input,
@@ -1847,5 +1857,8 @@ button.load-more-btn:hover {
   }
   #Contact-info {
     padding-bottom: 2rem;
+  }
+  #Contact-map {
+    padding-bottom: 50px;
   }
 }
