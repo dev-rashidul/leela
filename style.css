@@ -94,6 +94,12 @@ nav .con-btn:hover {
   transform: rotate(-45deg);
 }
 
+.navbar-toggler:focus {
+  box-shadow: none;
+  background: none;
+  border: none;
+}
+
 .sec1 {
   position: relative;
   padding: 0;
@@ -1380,6 +1386,8 @@ Blog Page CSS
 
 .news-card {
   text-align: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #193071;
 }
 
 .news-card h6 {
@@ -1410,6 +1418,13 @@ Blog Page CSS
   padding: 15px 18px;
   border: 1px solid #505050;
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.news-card a:hover {
+  background: #505050;
+  color: #ffffff;
+  border: 1px solid #505050;
 }
 
 .load-more-btn a {
@@ -1421,6 +1436,13 @@ Blog Page CSS
   padding: 15px 35px;
   border: 1px solid #505050;
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.load-more-btn a:hover {
+  color: #505050;
+  background: transparent;
+  border: 1px solid #505050;
 }
 
 /* Blog News Section CSS End */
@@ -1511,6 +1533,11 @@ Blog Page CSS
   font-weight: 600;
   text-decoration: none;
   color: #505050;
+  transition: all 0.3s ease-in-out;
+}
+
+.news-category ul li a:hover {
+  color: #193071;
 }
 
 .recent-posts {
@@ -1540,10 +1567,16 @@ Blog Page CSS
   left: 33%;
 }
 
-.recent-post-content h6 {
+.recent-post-content a {
   font-family: "financer", sans-serif;
+  text-decoration: none;
   font-weight: 800;
   color: #212121;
+  transition: all 0.3s ease-in-out;
+}
+
+.recent-post-content a:hover {
+  color: #193071;
 }
 
 .recent-post-content p {
@@ -1607,10 +1640,6 @@ Blog Page CSS
   .recent-posts .border-bottom {
     left: 38%;
   }
-
-  .recent-post {
-    font-size: 2.5rem;
-  }
 }
 @media (min-width: 300px) and (max-width: 767px) {
   .news-category .border-bottom {
@@ -1649,3 +1678,174 @@ Blog Page CSS
 }
 
 /* Blog Main */
+
+/* ==============**==============
+==============**==============
+Contact Page CSS
+==============**==============
+==============**============== */
+
+.contact-hero-wrapper {
+  background: url(./img/contact-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 34rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-hero-wrapper h2 {
+  font-family: "financer", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 17%;
+}
+
+/* Contact Map Section CSS Start */
+
+#Contact-map {
+  padding-top: 60px;
+}
+
+.map-text {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.map-text h2 {
+  font-family: "financer", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #193071;
+}
+
+.map-text p {
+  font-family: "financer", sans-serif;
+  font-weight: 500;
+  color: #193071;
+  padding-top: 10px;
+}
+
+.map-text .border-bottom {
+  width: 40%;
+  margin-left: 2%;
+}
+
+.contact-map {
+  padding-top: 50px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 600px;
+}
+
+/* Contact Map Section CSS End */
+
+/* Contact Form Section CSS Start */
+
+#Contact-info {
+  background: #eff1fe;
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: #ffffff;
+  padding: 20px 30px;
+  margin-bottom: 42px;
+  outline: none;
+  border: none;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+button.load-more-btn {
+  font-family: "financer", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #505050;
+  padding: 12px 35px;
+  border: 1px solid #505050;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+button.load-more-btn:hover {
+  color: #505050;
+  background: transparent;
+  border: 1px solid #505050;
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 100%;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
+  margin-right: 25px;
+}
+
+.contact-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  padding: 12px;
+  clip-path: circle(1.25rem);
+}
+
+.contact-information h4 {
+  font-family: "financer", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4f4f4f;
+}
+
+.contact-information p {
+  font-family: "financer", sans-serif;
+  font-weight: 500;
+  color: #4f4f4f;
+}
+
+.footer-contact {
+  padding: 0px;
+}
+
+/* Contact Form Section CSS End */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .map-text {
+    padding: 0 1.25rem;
+  }
+  .map-text h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .contact-hero-wrapper h2 {
+    font-size: 2.5rem;
+    padding-top: 100%;
+  }
+  .contact-map iframe {
+    height: 400px;
+  }
+  .map-text {
+    padding: 0 1.25rem;
+  }
+  .map-text h2 {
+    font-size: 2rem;
+  }
+  #Contact-info {
+    padding-bottom: 2rem;
+  }
+}
